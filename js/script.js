@@ -19,6 +19,10 @@ const numbersRange = [];
 const countdownElem = document.querySelector('#countdown'); 
 // setto il numero di iterazioni del countdown intanto 3 cosi non sclero
 let countdownValue = 3; 
+// identifico diov del form
+const userForm = document.querySelector('#answers-form')
+
+
 
 //==================================================================
 
@@ -33,3 +37,4 @@ countdownElem.innerHTML = `${countdownValue}!`;
 
 // setto ogni quanto decrementa il countdown value
 const intervalId = setInterval(countdownHandler, 1000);
+
