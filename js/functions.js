@@ -47,3 +47,19 @@ function populateNumbers() {
     }
 
 }
+
+
+//================= Countdown Handler ====================================//
+
+function countdownHandler() {
+    console.log('Dentro countdownHandler');
+    
+    countdownValue--;
+
+    if (countdownValue >= 0) {
+        console.log(countdownValue);
+        countdownElem.innerHTML = `${countdownValue}!`;
+    } else { // -1
+        clearInterval(intervalId);
+    }
+}
