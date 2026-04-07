@@ -1,9 +1,9 @@
 
 //=====FUNZIONE PER CALCOLARE NUMERO RANDOM TRA DUE NUMERI==========
 
-    function myRandom(minValue, maxValue) {
-        return Math.floor(Math.random() *  (maxValue - minValue + 1)) + minValue; // restituisce numero random tra intervallo di numeri
-    }
+function myRandom(minValue, maxValue) {
+    return Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue; // restituisce numero random tra intervallo di numeri
+}
 
 //==================================================================
 
@@ -46,14 +46,15 @@ function populateNumbers() {
         newLi.innerHTML = `${myFiveNumbers[i]}`
     }
 
+    return myFiveNumbers;
+
 }
 
 
 //================= Countdown Handler ====================================//
 
 function countdownHandler() {
-    console.log('Dentro countdownHandler');
-    
+
     countdownValue--;
 
     if (countdownValue >= 0) {
@@ -83,6 +84,16 @@ function btnClickHandler(event) {
 
         userGuess.push(currentValue);
     }
-  
+
+    for (let i = 0; i < userGuess.length; i++) {
+        const currentGuessedNumber = Number(userGuess[i]);
+
+        if (newPull.includes(currentGuessedNumber)) {
+            commonNumbers.push(currentGuessedNumber);
+        }
+    }
+
+    console.log(commonNumbers);
+
 
 }
