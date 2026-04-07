@@ -110,7 +110,7 @@ function btnClickHandler(event) {
         userInstructions.innerHTML = `Mi spiace, non hai indovinato nessun numero! :()
         Ecco i numeri corretti:`;
     } else {
-        userInstructions.innerHTML =  `Ehila! Ne hai indovinati ${commonNumbers.length} <br>
+        userInstructions.innerHTML =  `Ehila! <br> Ne hai indovinati ${commonNumbers.length} <br>
         Ecco i numeri corretti:`;
     }
     // se non ne ha indovinato nemmeno uno --> facciamo apparire un
