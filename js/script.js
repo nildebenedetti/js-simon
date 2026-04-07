@@ -28,11 +28,7 @@ const userInstructions = document.querySelector('#instructions');
 // identifico il bottone
 const formBtn = document.querySelector('.btn-primary');
 // identifico variabili per userGuess
-const userNum0 = document.querySelector('#user-num-0');
-const userNum1 = document.querySelector('#user-num-1');
-const userNum2 = document.querySelector('#user-num-2');
-const userNum3 = document.querySelector('#user-num-3');
-const userNum4 = document.querySelector('#user-num-4');
+const userNumbers = document.querySelectorAll('#input-group')
 
 //==================================================================
 
@@ -52,7 +48,7 @@ const intervalId = setInterval(countdownHandler, 1000);
 // n.B. devo piallare con parametro (event)
 // il comportamento default
 
-formBtn.addEventListener(btnClickHandler);
+formBtn.addEventListener('click',btnClickHandler);
 
 // scrivo la mia funzione al click
 
@@ -60,7 +56,7 @@ function btnClickHandler (event) {
     event.preventDefault;
 
     // registriamo input user in array e poi confrontiamo i valori
-
+    userNum0
     // con il mio newPull
 }
 
