@@ -39,13 +39,6 @@ let newPull = [];
 
 newPull = populateNumbers();
 
-// inserire timer 30 secondi
-
-// scrivo nel div il conto alla rovescia
-countdownElem.innerHTML = `${countdownValue}!`;
-
-// setto ogni quanto decrementa il countdown value
-const intervalId = setInterval(countdownHandler, 1000);
 
 // inserisco eventListener per clickHandler
 
