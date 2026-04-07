@@ -28,23 +28,6 @@ const newPull = populateNumbers();
 
 // inserire timer 30 secondi
 
-
-//================= Countdown Handler ====================================//
-
-
-function countdownHandler() {
-    console.log('Dentro countdownHandler');
-    
-    countdownValue--;
-
-    if (countdownValue >= 0) {
-        console.log(countdownValue);
-        countdownElem.innerHTML = `${countdownValue}!`;
-    } else { // -1
-        clearInterval(intervalId);
-    }
-}
-
 // scrivo nel div il conto alla rovescia
 countdownElem.innerHTML = `${countdownValue}!`;
 
