@@ -107,10 +107,10 @@ function btnClickHandler(event) {
     numbersList.classList.remove('d-none');
     
     if (commonNumbers.length === 0) {
-        userInstructions.innerHTML = `Mi spiace, non hai indovinato nessun numero!
+        userInstructions.innerHTML = `Mi spiace, non hai indovinato nessun numero! :()
         Ecco i numeri corretti:`;
     } else {
-        userInstructions.innerHTML =  `Ehila! Ne hai indovinati ${commonNumbers.length}
+        userInstructions.innerHTML =  `Ehila! Ne hai indovinati ${commonNumbers.length} <br>
         Ecco i numeri corretti:`;
     }
     // se non ne ha indovinato nemmeno uno --> facciamo apparire un
