@@ -56,7 +56,7 @@ function btnClickHandler(event) {
     event.preventDefault();
 
     for (let i = 0; i < userNumbers.length; i++) {
-        const currentValue = parseInt(userNumbers[i]).value;
+        const currentValue = (userNumbers[i]).value;
 
         userGuess.push(currentValue);
     }
