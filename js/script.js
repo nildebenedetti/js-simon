@@ -53,7 +53,7 @@ formBtn.addEventListener('click',btnClickHandler);
 // scrivo la mia funzione al click
 
 function btnClickHandler(event) {
-    event.preventDefault;
+    event.preventDefault();
 
     for (let i = 0; i < userNumbers.length; i++) {
         const currentValue = parseInt(userNumbers[i]).value;
