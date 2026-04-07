@@ -19,3 +19,31 @@ function myRandomNumbersGenerator() {
     return numbersRange;
 
 }
+
+//================== Funzione pull Numeri in intefaccia utente =======================
+// racchiudo tutti in funzione di modo che si crei 
+// interfaccia utente in un colpo solo
+
+function populateNumbers() {
+
+
+    // invocazione funzione per generare 5 random numbers
+    const myFiveNumbers = myRandomNumbersGenerator();
+
+    // creo funzione per scrivere un nuovo li con dentro
+    // value di myFiveNumbers
+    // il tutto per 5 volte
+
+    for (let i = 0; i <= myFiveNumbers.length - 1; i++) {
+        let currentNumber = myFiveNumbers[i];
+        // scrtivimi un li con dentro value di currentNumber
+        let newLi = document.createElement('li');
+        // appendilo
+        numbersList.appendChild(newLi);
+        // add classe
+        numbersList.lastElementChild.classList.add(`number-${i}`);
+        // add html con numero i dell array 
+        newLi.innerHTML = `${myFiveNumbers[i]}`
+    }
+
+}
