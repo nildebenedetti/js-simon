@@ -16,22 +16,11 @@ let randomNumber;
 // creo array vuoto dove pushare i miei numeri random
 const numbersRange = [];
 
-// creo una funzione per generare 5 numeri random e push in array
+//==================================================================
 
-function myRandomNumbersGenerator() {
-
-    for (let i = 0; i <= 4; i++) {
-        let randomNumber = myRandom(1, 50);
-        numbersRange.push(randomNumber);
-    }
-
-    return numbersRange;
-
-}
-
+// invocazione funzione per generare 5 random numbers
 const myFiveNumbers = myRandomNumbersGenerator();
 
-console.log(myFiveNumbers);
 
 
 
