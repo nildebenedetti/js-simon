@@ -21,6 +21,26 @@ const numbersRange = [];
 // invocazione funzione per generare 5 random numbers
 const myFiveNumbers = myRandomNumbersGenerator();
 
+// creo funzione per scrivere un nuovo li con dentro
+// value di myFiveNumbers
+// il tutto per 5 volte
+
+// dev oscrivere un ciclo for
+
+for (let i = 0; i <= numbersRange.length -1; i++) {
+   let currentNumber = numbersRange[i];
+    // scrtivimi un li con dentro value di currentNumber
+    let newLi = document.createElement('li');
+     // appendilo
+    numbersList.appendChild(newLi);
+    // add classe
+    numbersList.lastElementChild.classList.add(`number-${i}`);
+    // add html
+
+
+}
+console.log(numbersList);
+
 
 
 
