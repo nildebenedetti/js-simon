@@ -18,9 +18,9 @@ const numbersRange = [];
 // creo array vuoto per risposte utente
 const userGuess = [];
 // identifico il div del countdown
-const countdownElem = document.querySelector('#countdown'); 
+const countdownElem = document.querySelector('#countdown');
 // setto il numero di iterazioni del countdown intanto 3 cosi non sclero
-let countdownValue = 3; 
+let countdownValue = 3;
 // identifico diov del form
 const userForm = document.querySelector('#answers-form');
 // identifico istruzioniu utente
@@ -28,7 +28,7 @@ const userInstructions = document.querySelector('#instructions');
 // identifico il bottone
 const formBtn = document.querySelector('.btn-primary');
 // identifico variabili per userGuess
-const userNumbers = document.querySelectorAll('#input-group')
+const userNumbers = document.querySelectorAll('#input-group > input');
 
 //==================================================================
 
@@ -52,13 +52,23 @@ formBtn.addEventListener('click',btnClickHandler);
 
 // scrivo la mia funzione al click
 
-function btnClickHandler (event) {
+function btnClickHandler(event) {
     event.preventDefault;
 
-    // registriamo input user in array e poi confrontiamo i valori
-    userNum0
-    // con il mio newPull
+    for (let i = 0; i < userNumbers.length; i++) {
+        const currentValue = parseInt(userNumbers[i]).value;
+
+        userGuess.push(currentValue);
+    }
+    console.log(userGuess);
+    return userGuess;
+
 }
+
+// ora devo scrivere: dati due array stampami quelli in comune
+
+
+
 
 
 
