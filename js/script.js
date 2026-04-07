@@ -45,5 +45,14 @@ const intervalId = setInterval(countdownHandler, 1000);
 // n.B. devo piallare con parametro (event)
 // il comportamento default
 
+formBtn.addEventListener(btnClickHandler);
+
+// scrivo la mia funzione al click
+
+function btnClickHandler (event) {
+    event.preventDefault;
+    
+}
+
 
 
