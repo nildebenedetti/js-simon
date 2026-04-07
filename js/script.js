@@ -15,42 +15,38 @@ const numbersList = document.querySelector('#numbers-list');
 let randomNumber;
 // creo array vuoto dove pushare i miei numeri random
 const numbersRange = [];
+// identifico il div del countdown
+const countdownElem = document.querySelector('#countdown'); 
+// setto il numero di iterazioni del countdown intanto 3 cosi non sclero
+let countdownValue = 3; 
 
 //==================================================================
-
-// racchiudo tutti in funzione di modo che si crei interfaccia utente in un colpo solo
-
-function populateNumbers() {
-
-
-    // invocazione funzione per generare 5 random numbers
-    const myFiveNumbers = myRandomNumbersGenerator();
-
-    // creo funzione per scrivere un nuovo li con dentro
-    // value di myFiveNumbers
-    // il tutto per 5 volte
-
-    for (let i = 0; i <= myFiveNumbers.length - 1; i++) {
-        let currentNumber = myFiveNumbers[i];
-        // scrtivimi un li con dentro value di currentNumber
-        let newLi = document.createElement('li');
-        // appendilo
-        numbersList.appendChild(newLi);
-        // add classe
-        numbersList.lastElementChild.classList.add(`number-${i}`);
-        // add html con numero i dell array 
-        newLi.innerHTML = `${myFiveNumbers[i]}`
-    }
-
-}
 
 // invocazione funzione populate numbers
 
 const newPull = populateNumbers();
 
+// inserire timer 30 secondi
 
 
+//================= Countdown Handler ====================================//
 
 
+function countdownHandler() {
+    console.log('Dentro countdownHandler');
+    
+    countdownValue--;
 
-// li pusho nella ul
+    if (countdownValue >= 0) {
+        console.log(countdownValue);
+        countdownElem.innerHTML = `${countdownValue}!`;
+    } else { // -1
+        clearInterval(intervalId);
+    }
+}
+
+// scrivo nel div il conto alla rovescia
+countdownElem.innerHTML = `${countdownValue}!`;
+
+// setto ogni quanto decrementa il countdown value
+const intervalId = setInterval(countdownHandler, 1000);
