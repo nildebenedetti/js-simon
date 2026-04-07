@@ -18,13 +18,21 @@ const numbersRange = [];
 
 // creo una funzione per generare 5 numeri random e push in array
 
-for (let i = 0; i <= 4; i++) {
-     let randomNumber = myRandom(1,50);
-     numbersRange.push(randomNumber);
+function myRandomNumbersGenerator() {
+
+    for (let i = 0; i <= 4; i++) {
+        let randomNumber = myRandom(1, 50);
+        numbersRange.push(randomNumber);
+    }
+
+    return numbersRange;
+
 }
 
+const myFiveNumbers = myRandomNumbersGenerator();
 
-console.log(numbersRange);
+console.log(myFiveNumbers);
+
 
 
 
