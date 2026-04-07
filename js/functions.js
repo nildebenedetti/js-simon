@@ -93,7 +93,11 @@ function btnClickHandler(event) {
         }
     }
 
-    console.log(commonNumbers);
+    console.log(`il pull di questo turno e'${newPull}`);
+    console.log(`user ha inserito ${userGuess}`);
+    
+    console.log(`Ehila! Ne hai indovinati ${commonNumbers.length}`);
+    
 
 
 }
