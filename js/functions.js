@@ -103,7 +103,14 @@ function btnClickHandler(event) {
 
     // facciamo riapparire i numeri originari
     numbersList.classList.remove('d-none');
-
+    
+    if (commonNumbers.length === 0) {
+        userInstructions.innerHTML = `Mi spiace, non hai indovinato nessun numero!
+        Ecco i numeri corretti:`;
+    } else {
+        userInstructions.innerHTML =  `Ehila! Ne hai indovinati ${commonNumbers.length}
+        Ecco i numeri corretti:`;
+    }
     // se non ne ha indovinato nemmeno uno --> facciamo apparire un
     // mi spiace, ritenta
 
