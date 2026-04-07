@@ -15,6 +15,8 @@ const numbersList = document.querySelector('#numbers-list');
 let randomNumber;
 // creo array vuoto dove pushare i miei numeri random
 const numbersRange = [];
+ // registriamo input user in array e poi confrontiamo i valori
+const userGuess = [];
 // identifico il div del countdown
 const countdownElem = document.querySelector('#countdown'); 
 // setto il numero di iterazioni del countdown intanto 3 cosi non sclero
@@ -51,7 +53,11 @@ formBtn.addEventListener(btnClickHandler);
 
 function btnClickHandler (event) {
     event.preventDefault;
+
+   
+
     
+    // con il mio newPull
 }
 
 
