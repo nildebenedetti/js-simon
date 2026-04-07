@@ -61,5 +61,10 @@ function countdownHandler() {
         countdownElem.innerHTML = `${countdownValue}!`;
     } else { // -1
         clearInterval(intervalId);
+        // togliamo d-none al form
+        userForm.classList.remove('d-none');
+        //  add d-none ai miei numerini e countdown
+        numbersList.classList.add('d-none');
+        countdownElem.classList.add('d-none');
     }
 }
