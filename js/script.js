@@ -22,7 +22,7 @@ const commonNumbers = [];
 // identifico il div del countdown
 const countdownElem = document.querySelector('#countdown');
 // setto il numero di iterazioni del countdown intanto 3 cosi non sclero
-let countdownValue = 3;
+let countdownValue = 30;
 // identifico diov del form
 const userForm = document.querySelector('#answers-form');
 // identifico istruzioniu utente
