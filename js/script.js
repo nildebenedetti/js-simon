@@ -25,19 +25,16 @@ const myFiveNumbers = myRandomNumbersGenerator();
 // value di myFiveNumbers
 // il tutto per 5 volte
 
-// dev oscrivere un ciclo for
-
-for (let i = 0; i <= numbersRange.length -1; i++) {
-   let currentNumber = numbersRange[i];
+for (let i = 0; i <= myFiveNumbers.length -1; i++) {
+   let currentNumber = myFiveNumbers[i];
     // scrtivimi un li con dentro value di currentNumber
     let newLi = document.createElement('li');
      // appendilo
     numbersList.appendChild(newLi);
     // add classe
     numbersList.lastElementChild.classList.add(`number-${i}`);
-    // add html
-
-
+    // add html con numero i dell array 
+    newLi.innerHTML = `${myFiveNumbers[i]}`
 }
 console.log(numbersList);
 
