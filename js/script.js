@@ -5,3 +5,4 @@
 // metto d-none ai numeri originali e lo levo al form
 // quando utente clicca submit, controllo che indipendentemente dall'ordine
 // i numeri di input matchino quelli generati da myRandom
+// BONUS aggiungere validazione (rileggi consegna)
