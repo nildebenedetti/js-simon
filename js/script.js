@@ -15,7 +15,7 @@ const numbersList = document.querySelector('#numbers-list');
 let randomNumber;
 // creo array vuoto dove pushare i miei numeri random
 const numbersRange = [];
- // registriamo input user in array e poi confrontiamo i valori
+// creo array vuoto per risposte utente
 const userGuess = [];
 // identifico il div del countdown
 const countdownElem = document.querySelector('#countdown'); 
@@ -27,7 +27,12 @@ const userForm = document.querySelector('#answers-form');
 const userInstructions = document.querySelector('#instructions');
 // identifico il bottone
 const formBtn = document.querySelector('.btn-primary');
-
+// identifico variabili per userGuess
+const userNum0 = document.querySelector('#user-num-0');
+const userNum1 = document.querySelector('#user-num-1');
+const userNum2 = document.querySelector('#user-num-2');
+const userNum3 = document.querySelector('#user-num-3');
+const userNum4 = document.querySelector('#user-num-4');
 
 //==================================================================
 
@@ -54,9 +59,8 @@ formBtn.addEventListener(btnClickHandler);
 function btnClickHandler (event) {
     event.preventDefault;
 
-   
+    // registriamo input user in array e poi confrontiamo i valori
 
-    
     // con il mio newPull
 }
 
