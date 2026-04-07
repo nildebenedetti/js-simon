@@ -11,13 +11,20 @@
 
 // identifico l'ul in cui devo inserire i li con numero random
 const numbersList = document.querySelector('#numbers-list');
+// dichiaro variabile per generare i randomNumbers
+let randomNumber;
 // creo array vuoto dove pushare i miei numeri random
 const numbersRange = [];
 
 // creo una funzione per generare 5 numeri random e push in array
- const randomNumber = myRandom(1,50)
 
-console.log(randomNumber);
+for (let i = 0; i <= 4; i++) {
+     let randomNumber = myRandom(1,50);
+     numbersRange.push(randomNumber);
+}
+
+
+console.log(numbersRange);
 
 
 
