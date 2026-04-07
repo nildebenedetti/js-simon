@@ -6,3 +6,10 @@
 // quando utente clicca submit, controllo che indipendentemente dall'ordine
 // i numeri di input matchino quelli generati da myRandom
 // BONUS aggiungere validazione (rileggi consegna)
+
+//============== Variabili Global =================================
+
+// identifico l'ul in cui devo inserire i li con numero random
+const numbersList = document.querySelector('#numbers-list');
+
+// creo una funzione per generare 5 numeri random
