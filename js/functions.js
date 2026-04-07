@@ -70,3 +70,19 @@ function countdownHandler() {
         userInstructions.innerHTML = `Ora inserisci i numeri corretti!`;
     }
 }
+
+//================Funzione Clickhandler=================================//
+// quando click, prendi gli input utente e pusha in array
+// n.B. devo piallare con parametro (event)
+// il comportamento default
+function btnClickHandler(event) {
+    event.preventDefault();
+
+    for (let i = 0; i < userNumbers.length; i++) {
+        const currentValue = (userNumbers[i]).value;
+
+        userGuess.push(currentValue);
+    }
+  
+
+}

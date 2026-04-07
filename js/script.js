@@ -45,25 +45,12 @@ countdownElem.innerHTML = `${countdownValue}!`;
 const intervalId = setInterval(countdownHandler, 1000);
 
 // inserisco eventListener per clickHandler
-// n.B. devo piallare con parametro (event)
-// il comportamento default
+
 
 formBtn.addEventListener('click',btnClickHandler);
 
 // scrivo la mia funzione al click
 
-function btnClickHandler(event) {
-    event.preventDefault();
-
-    for (let i = 0; i < userNumbers.length; i++) {
-        const currentValue = (userNumbers[i]).value;
-
-        userGuess.push(currentValue);
-    }
-    console.log(userGuess);
-    return userGuess;
-
-}
 
 // ora devo scrivere: dati due array stampami quelli in comune
 
