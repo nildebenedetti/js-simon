@@ -21,7 +21,8 @@ const countdownElem = document.querySelector('#countdown');
 let countdownValue = 3; 
 // identifico diov del form
 const userForm = document.querySelector('#answers-form')
-
+// identifico istruzioniu utente
+const userInstructions = document.querySelector('#instructions')
 
 
 //==================================================================
