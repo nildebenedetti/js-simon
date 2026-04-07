@@ -17,6 +17,8 @@ let randomNumber;
 const numbersRange = [];
 // creo array vuoto per risposte utente
 const userGuess = [];
+// dichiaro un array che sara' valorizzato solo con numeri in comune
+const commonNumbers = [];
 // identifico il div del countdown
 const countdownElem = document.querySelector('#countdown');
 // setto il numero di iterazioni del countdown intanto 3 cosi non sclero
@@ -29,12 +31,13 @@ const userInstructions = document.querySelector('#instructions');
 const formBtn = document.querySelector('.btn-primary');
 // identifico variabili per userGuess
 const userNumbers = document.querySelectorAll('#input-group > input');
+let newPull = [];
 
 //==================================================================
 
 // invocazione funzione populate numbers
 
-const newPull = populateNumbers();
+newPull = populateNumbers();
 
 // inserire timer 30 secondi
 
@@ -46,13 +49,10 @@ const intervalId = setInterval(countdownHandler, 1000);
 
 // inserisco eventListener per clickHandler
 
-
 formBtn.addEventListener('click',btnClickHandler);
 
-// scrivo la mia funzione al click
-
-
 // ora devo scrivere: dati due array stampami quelli in comune
+
 
 
 
