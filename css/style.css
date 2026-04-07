@@ -1,17 +1,80 @@
-/* Generics */
+/* Palette Matrix */
+:root {
+    --matrix-green: #00FF41;
+    --matrix-glow: #008F11;
+    --matrix-bg: #050505;
+}
 
-/* # COUNTDOWN */
+body {
+    background-color: var(--matrix-bg) !important;
+    color: var(--matrix-green) !important;
+    font-family: 'VT323', monospace;
+    /* Effetto linee di scansione monitor vintage */
+    background-image: linear-gradient(0deg, transparent 50%, rgba(0, 255, 65, 0.02) 50%);
+    background-size: 100% 4px;
+}
 
+/* Countdown e Testi */
 #countdown {
-	font-weight: bolder;
-	font-size: 5rem;
+    color: var(--matrix-green);
+    text-shadow: 0 0 15px var(--matrix-green);
+    font-size: 6rem !important;
 }
 
-/* #NUMBERS */
-#numbers-list {
-	font-size: 3rem;
+#instructions {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
-input {
-	width: 80px !important;
+/* Lista Numeri (durante la memorizzazione) */
+#numbers-list li {
+    font-size: 3.5rem;
+    color: #fff; /* Bianco puro per leggerli bene subito */
+    text-shadow: 0 0 20px var(--matrix-green);
+    border: 2px solid var(--matrix-green);
+    padding: 10px 20px;
+    background: rgba(0, 255, 65, 0.1);
+}
+
+/* --- FIX CAMPI DI INPUT --- */
+#answers-form .form-control {
+    background-color: #000 !important; /* Sfondo nero pieno */
+    border: 3px solid var(--matrix-green) !important; /* Bordo verde neon SPESSO */
+    color: var(--matrix-green) !important; /* Scritta verde */
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 0 0 10px var(--matrix-glow); /* Bagliore costante per vederli */
+}
+
+/* Quando l'utente clicca dentro l'input */
+#answers-form .form-control:focus {
+    box-shadow: 0 0 25px var(--matrix-green) !important;
+    border-color: #fff !important; /* Il bordo diventa bianco al focus */
+    outline: none;
+}
+
+/* Bottone Conferma */
+.btn-primary {
+    background-color: transparent !important;
+    border: 2px solid var(--matrix-green) !important;
+    color: var(--matrix-green) !important;
+    font-size: 1.5rem !important;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: var(--matrix-green) !important;
+    color: #000 !important;
+    box-shadow: 0 0 20px var(--matrix-green);
+}
+
+/* Rimuoviamo le freccette brutte dagli input numero */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

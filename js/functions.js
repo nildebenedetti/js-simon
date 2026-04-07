@@ -52,9 +52,6 @@ function populateNumbers() {
 
 
 //================= Countdown Handler ====================================//
-// scrivo nel div il conto alla rovescia
-countdownElem.innerHTML = `${countdownValue}!`;
-
 // setto ogni quanto decrementa il countdown value
 const intervalId = setInterval(countdownHandler, 1000); 
 

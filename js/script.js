@@ -32,6 +32,8 @@ const formBtn = document.querySelector('.btn-primary');
 // identifico variabili per userGuess
 const userNumbers = document.querySelectorAll('#input-group > input');
 let newPull = [];
+// scrivo nel div il conto alla rovescia
+countdownElem.innerHTML = `${countdownValue}!`;
 
 //==================================================================
 
