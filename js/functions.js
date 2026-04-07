@@ -97,6 +97,18 @@ function btnClickHandler(event) {
     console.log(`user ha inserito ${userGuess}`);
     
     console.log(`Ehila! Ne hai indovinati ${commonNumbers.length}`);
+
+    // facciamo sparire il form
+        userForm.classList.add('d-none');
+
+    // facciamo riapparire i numeri originari
+    numbersList.classList.remove('d-none');
+
+    // se non ne ha indovinato nemmeno uno --> facciamo apparire un
+    // mi spiace, ritenta
+
+    //se ne ha indovinato almeno uno --> facciamo apparire in html
+    // quanti ne ha indovinati e
     
 
 
