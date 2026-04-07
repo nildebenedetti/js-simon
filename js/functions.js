@@ -66,5 +66,7 @@ function countdownHandler() {
         //  add d-none ai miei numerini e countdown
         numbersList.classList.add('d-none');
         countdownElem.classList.add('d-none');
+        // modifico le instructions
+        userInstructions.innerHTML = `Ora inserisci i numeri corretti!`;
     }
 }
